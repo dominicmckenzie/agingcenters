@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Animals!</title>
+
+        <!-- FONT AWESOME -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+        <!-- Your styles should be called here -->
+        <link href="style.css" rel="stylesheet" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+    </head>
+
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1>Which animals are the cutest?</h1>
+            <p>Use the dropdown to filter the items</p>
+            <div>
+                <select class="filter">
+                    <option value="item">Filter...</option>
+                    <option value="classes">Classes/Workshops</option>
+                    <option value="substance">Substance Use Services</option>
+                    <option value="career">Career Services</option>
+                    <option value="meals">Meals</option>
+                    <option value="community">Community</option>
+                    <option value="hiv">HIV Specific Services</option>
+                    <option value="leisure">Leisure</option>
+                    <option value="legal">Legal Services</option>
+                    <option value="mental">Mental Health Services</option>
+                    <option value="health">Health Services</option>
+                    <option value="case">Case Management</option>
+                    <option value="exercise">Exercise Programs</option>
+                </select>
+            </div>
+            <div class="item leisure classes substance career hiv community active bkpride">
+                <img src="img/brooklyn-pride.jpg" />
+                <h3>Brooklyn Community Pride Center</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes meals leisure health legal case exercise active edie">
+                <img src="img/edie-windsor.jpg" />
+                <h3>Edie Windsor SAGE Center</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes meals health substance community legal case career hiv mental exercise active gmhc">
+                <img src="img/gaymens-health.jpg" />
+                <h3>Gay Men's Health Crisis</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes leisure community hiv active lq">
+                <img src="img/lgbt-queens.jpg" />
+                <h3>LGBT Network - Queens</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes meals leisure health community exercise active queensl">
+                <img src="img/queens-lgbtcenter.jpg" />
+                <h3>Queens Center for Gay Seniors</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes meals health community case exercise active bxsage">
+                <img src="img/sage-bronx.jpg" />
+                <h3>SAGE Center - Bronx</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes meals leisure case exercise active bksage">
+                <img src="img/sage-griot.jpg" />
+                <h3>SAGE - GRIOT</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item classes meals leisure health community case hiv exercise active harsage">
+                <img src="img/sage-harlem.jpg" />
+                <h3>SAGE Center - Harlem</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item health leisure community case exercise active sipride">
+                <img src="img/staten-pride.png" />
+                <h3>SAGE - Pride Center of Staten Island</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+            <div class="item leisure substance community career hiv mental active cent">
+                <img src="img/the-center.jpg" />
+                <h3>LGBT Community Center - "The Center"</h3>
+                <span class="description">WRITE DESCRIPTION HERE</span>
+            </div>
+
+        </div>
+
+        <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Your javascript should be called here -->
+        <script src="main.js"></script>
+    </body>
+
+</html>
