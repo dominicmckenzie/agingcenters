@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  $(".filter").on("change", function(e) {
-    e.preventDefault();
+  $("button").on("click", function() {
+    // $(".filter").on("change", function(e) {
+    // e.preventDefault();
 
-    var filter = $(this).val();
-
+    // var filter = $(this).attr("name");
+    var filter = $.map($("button").toArray(), function(e) {
+      return $(e).attr("name");
+    }).join(".");
     $(".item.active").removeClass("active");
 
     $("." + filter).addClass("active");
@@ -11,6 +14,7 @@ $(document).ready(function() {
 
   });
   $(".item").on("click", function() {
-    $(".description").toggleClass("active");
+    var item = $(this).find(".description");
+    item.toggleClass("active");
   });
 });
