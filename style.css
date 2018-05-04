@@ -21,6 +21,11 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4{
+  line-height: 0.1em;
 }
 
 .container {
