@@ -40,9 +40,6 @@ var programs = [{
   {
     id: "TheCenter",
     tags: ["leisure", "substance", "community", "career", "hiv", "mental", "active", "cent"]
-  },
-  {
-
   }
 ]
 
@@ -86,10 +83,10 @@ $(document).ready(function() {
 
 
   });
-  // $(".item").on("click", function() {
-  //   var item = $(this).find(".description");
-  //   item.toggleClass("active");
-  // });
+  $(".item").on("click", function() {
+    var item = $(this).find(".description");
+    item.toggleClass("active");
+  });
 });
 
 function findPrograms(filterTags) {
@@ -103,7 +100,7 @@ function findPrograms(filterTags) {
       //Iterate through each program and look for the tags which are selected.
       programs.forEach(function(currentProgram) {
         //If the tags are found, show the respective programs
-        if (currentProgram.tags.indexOf(currentTag) > -1) {
+        if (currentProgram.tags.length && currentProgram.tags.indexOf(currentTag) > -1) {
 
           $("#" + currentProgram.id).addClass("active");
         }
