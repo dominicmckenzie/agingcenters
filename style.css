@@ -69,7 +69,8 @@ select {
 
 .description{
   display: none;
-  background: grey;
+  background: white;
+  color: green;
 
 }
 
