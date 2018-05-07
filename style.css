@@ -85,6 +85,11 @@ select {
 
 }
 
+.options.on{
+  background: orange;
+  color: white;
+}
+
 
 /* Tablet/Desktop overrides */
 
