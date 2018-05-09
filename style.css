@@ -25,14 +25,16 @@ html, body {
 }
 
 h4{
-  line-height: 0.1em;
+  line-height: 1em;
 }
 
 p{
   text-align: justify;
   line-height: 1.5em;
 }
-
+h1{
+  text-align:inherit;
+}
 h2{
   font-size: 11px;
 }
@@ -40,14 +42,15 @@ h2{
 .container {
     max-width: 980px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 35px;
+
 }
 
 .item {
     width: 50%;
     padding: 5px;
     float: left;
-    min-height: 185px;
+    min-height: 255px;
     text-align: center;
     display: none;
     cursor: pointer;
